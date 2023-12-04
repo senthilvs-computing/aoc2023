@@ -8,4 +8,4 @@ puzzles portal : https://adventofcode.com/2023
 
 3)Day3 solution ; part1: 546312 & part2: 84563153 (& 330 gears found) ; part1 accepted ; part2 failed :( ; to debug till 23rd hour for streak
 
-4)Day4 solution ;
+4)Day4 solution ; part1: 24175 & part2 : 18846301 ; both got accepted.
