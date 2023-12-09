@@ -8,7 +8,7 @@ public class Day7Part2 {
 
         try {
 
-            List<String> allLines = Files.readAllLines(Paths.get("testday7part1.txt"));//day7.txt testday7part1.txt
+            List<String> allLines = Files.readAllLines(Paths.get("day7.txt"));//day7.txt testday7part1.txt
             Map<String,Integer> handToBidMap = new HashMap<>();
             List<String> fiveKind = new ArrayList<>();
             List<String> fourKind = new ArrayList<>();
@@ -17,6 +17,7 @@ public class Day7Part2 {
             List<String> twoKind = new ArrayList<>();
             List<String> oneKind = new ArrayList<>();
             List<String> highKind = new ArrayList<>();
+            List<String> dangerKind = new ArrayList<>();
             int notadded = 0;
             for(String entry: allLines){
                 String[] fields = entry.split(" ");
@@ -29,15 +30,20 @@ public class Day7Part2 {
                 int distincts = 0;
                 Set<Character> cards = new HashSet<>();
                 Map<Character,Integer> charCountMap = new HashMap<>();
+                int jCount = 0;
                 for(Character card:hand.toCharArray()){
                     if(!cards.contains(card)){
                         distincts++;
                         cards.add(card);
                     }
+                    if('J' == card){
+                        jCount++;
+                    }
                     charCountMap.put(card,charCountMap.getOrDefault(card,0)+1);
                 }
                 System.out.println(" charCountMap "+charCountMap);
                 int nonJHighest = Integer.MIN_VALUE;
+
                 char[] chars = {'2','3','4','5','6','7','8','9','T','Q','K','A'};
 
                 Character toBeReplaced = 'J';
@@ -80,8 +86,8 @@ public class Day7Part2 {
                 System.out.println("nonJHighest "+nonJHighest);
 
                 System.out.println(" original distincts  "+distincts);
-                if(charCountMap.get('J') != null){
-                    distincts = distincts - charCountMap.get('J') ;
+                if(jCount > 0 && jCount < 5){
+                    distincts = distincts - 1 ;//charCountMap.get('J') ;
                     //distincts = 5 - (nonJHighest + charCountMap.get('J'));
                 }
                 System.out.println(" overridden distincts  "+distincts);
@@ -114,6 +120,7 @@ public class Day7Part2 {
                 else{
                     //do nothing
                     System.out.println("hand not added to bag "+hand);
+                    dangerKind.add(hand);
                     notadded++;
                 }
 
@@ -123,6 +130,8 @@ public class Day7Part2 {
 
             System.out.println(" total hands  "+allLines.size());
             System.out.println(" not added hands   "+notadded);
+            System.out.println(" danger hands  "+dangerKind.size());
+            System.out.println(" danger hands  "+dangerKind);
             System.out.println(" five hands  "+fiveKind.size());
             System.out.println(" four hands  "+fourKind.size());
             System.out.println(" full hands  "+fullKind.size());

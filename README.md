@@ -14,7 +14,7 @@ puzzles portal : https://adventofcode.com/2023
 
 6)Day6 solution ; both part1 and part2 got accepted.
 
-7)Day7 solution ; part1 accepted ; part2 ran out of time :(
+7)Day7 solution ; part1 accepted ; part2 ran out of time :( but fixed over weekend and got accepted
 
 8)Day8 solution ; part1 accepted ; part2 ran out of time :(
 
