@@ -2,14 +2,20 @@
 
 puzzles portal : https://adventofcode.com/2023
 
-1)Day1 solution ; part1: 55029 & part2: 55686 ; both got accepted.
+1)Day1 solution ; both part1 and part2 got accepted.
 
-2)Day2 solution ; part1: 2771 & part2: 70924 ; both got accepted. 
+2)Day2 solution ; both part1 and part2 got accepted. 
 
-3)Day3 solution ; part1: 546312 & part2: 84563153 (& 330 gears found) ; part1 accepted ; part2 failed :( ; to debug till 23rd hour for streak
+3)Day3 solution ; part1 accepted ; part2 failed :( ; to be debugged
 
-4)Day4 solution ; part1: 24175 & part2 : 18846301 ; both got accepted.
+4)Day4 solution ; both part1 and part2 got accepted.
 
-5)Day5 solution ; part1: 157211394 & part2 : ? ; part1 accepted ; part2 ran out of time , ll be submitted later
+5)Day5 solution ; part1 accepted ; part2 ran out of time :(
 
-6)Day6 solution ; part1: 741000 & part2 : 38220708 ; both got accepted.
+6)Day6 solution ; both part1 and part2 got accepted.
+
+7)Day7 solution ; part1 accepted ; part2 ran out of time :(
+
+8)Day8 solution ; part1 accepted ; part2 ran out of time :(
+
+9)Day9 solution ; both part1 and part2 got accepted.
